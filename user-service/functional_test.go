@@ -20,7 +20,7 @@ const (
 	dbPass = "root"
 	dbHost = "host.docker.internal"
 	dbPort = "3306"
-	dbName = "tubesdb"
+	dbName = "db"user
 )
 
 func TestUserFlow_Functional(t *testing.T) {
