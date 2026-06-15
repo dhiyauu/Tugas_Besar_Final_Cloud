@@ -37,7 +37,7 @@ func InitDB() error {
 	}
 
 	if dbname == "" {
-		dbname = "tubesdb"
+		dbname = "gudangdb"
 	}
 
 	connStr := fmt.Sprintf(
