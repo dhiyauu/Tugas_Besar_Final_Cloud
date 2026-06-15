@@ -27,6 +27,12 @@ services:
       - "8085:8085"
     depends_on:
       - mysql
+    environment:
+      DB_HOST: mysql
+      DB_PORT: "3306"
+      DB_USER: root
+      DB_PASSWORD: root
+      DB_NAME: tubesdb
 
   courier-service:
     image: courier-service:latest
