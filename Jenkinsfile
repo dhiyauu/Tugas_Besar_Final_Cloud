@@ -151,7 +151,7 @@ pipeline {
                     DB_PORT=3306 \
                     DB_USER=root \
                     DB_PASSWORD=root \
-                    DB_NAME=tubesdb \
+                    DB_NAME=userdb \
                     go test -tags=functional -v -run Functional ./...
                     '''
                 }
@@ -163,7 +163,7 @@ pipeline {
                     DB_PORT=3306 \
                     DB_USER=root \
                     DB_PASSWORD=root \
-                    DB_NAME=tubesdb \
+                    DB_NAME=orderdb \
                     go test -tags=functional -v -run Functional ./...
                     '''
                 }
@@ -175,7 +175,7 @@ pipeline {
                     DB_PORT=3306 \
                     DB_USER=root \
                     DB_PASSWORD=root \
-                    DB_NAME=tubesdb \
+                    DB_NAME=trackingdb \
                     go test -tags=functional -v -run Functional ./...
                     '''
                 }
@@ -187,7 +187,7 @@ pipeline {
                     DB_PORT=3306 \
                     DB_USER=root \
                     DB_PASSWORD=root \
-                    DB_NAME=tubesdb \
+                    DB_NAME=gudangdb \
                     go test -tags=functional -v -run Functional ./...
                     '''
                 }
@@ -199,7 +199,7 @@ pipeline {
                     DB_PORT=3306 \
                     DB_USER=root \
                     DB_PASSWORD=root \
-                    DB_NAME=tubesdb \
+                    DB_NAME=courierdb \
                     go test -tags=functional -v -run Functional ./...
                     '''
                 }
@@ -211,7 +211,7 @@ pipeline {
                     DB_PORT=3306 \
                     DB_USER=root \
                     DB_PASSWORD=root \
-                    DB_NAME=tubesdb \
+                    DB_NAME=reportdb \
                     go test -tags=functional -v -run Functional ./...
                     '''
                 }
@@ -223,7 +223,7 @@ pipeline {
                     DB_PORT=3306 \
                     DB_USER=root \
                     DB_PASSWORD=root \
-                    DB_NAME=tubesdb \
+                    DB_NAME=paymentdb \
                     go test -tags=functional -v -run Functional ./...
                     '''
                 }
