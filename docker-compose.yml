@@ -67,7 +67,6 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: tubesdb
     ports:
       - "3306:3306"
     healthcheck:
@@ -76,6 +75,7 @@ services:
       retries: 10
     volumes:
       - mysql_data:/var/lib/mysql
+      - ./mysql-init:/docker-entrypoint-initdb.d
 
 volumes:
   mysql_data:
