@@ -15,21 +15,18 @@ func main() {
 	var err error
 
 	// Retry koneksi MySQL
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 30; i++ {
 
-		db, err = sql.Open(
-			"mysql",
-			"root:root@tcp(mysql:3306)/tubesdb",
-		)
+		DB, err = sql.Open("mysql", dsn)
 
 		if err == nil {
+        	err = DB.Ping()
+    	}
 
-			err = db.Ping()
-
-			if err == nil {
-				break
-			}
-		}
+		if err == nil {
+        	fmt.Println("DATABASE CONNECTED")
+        	return
+    	}
 
 		fmt.Println("Waiting MySQL...")
 		time.Sleep(5 * time.Second)
