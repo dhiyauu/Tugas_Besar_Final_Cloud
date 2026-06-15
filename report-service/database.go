@@ -26,7 +26,7 @@ func ConnectDB() {
 	}
 
 	dsn := fmt.Sprintf(
-		"root:root@tcp(%s:%s)/tubesdb",
+		"root:root@tcp(%s:%s)/reportdb",
 		host,
 		port,
 	)
