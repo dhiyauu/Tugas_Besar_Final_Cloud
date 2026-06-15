@@ -18,7 +18,7 @@ const (
 	dbPass = "root"
 	dbHost = "host.docker.internal"
 	dbPort = "3306"
-	dbName = "tubesdb" // Gunakan database yang sesuai untuk Tubes
+	dbName = "trackingdb" // Gunakan database yang sesuai untuk Tubes
 )
 
 func TestInsertTrackingEvent_Functional(t *testing.T) {
