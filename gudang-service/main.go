@@ -49,6 +49,8 @@ func InitDB() error {
 		dbname,
 	)
 
+	log.Println("DSN:", connStr)
+
 	var err error
 
 	
